@@ -11,6 +11,7 @@ import SafariServices
 
 class SecondViewController: UIViewController, SFSafariViewControllerDelegate {
 
+  @IBOutlet weak var safeView: UIView!
   var safari: SFSafariViewController?
 
   override func viewDidLoad() {
@@ -19,7 +20,7 @@ class SecondViewController: UIViewController, SFSafariViewControllerDelegate {
 
     safari = SFSafariViewController(url: URL(string: "https://appr.tc/r/978949844")!)
     safari?.delegate = self
-    safari?.modalPresentationStyle = .overCurrentContext
+    safari?.modalPresentationStyle = .custom
   }
 
   override func viewDidAppear(_ animated: Bool) {

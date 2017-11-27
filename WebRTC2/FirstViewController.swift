@@ -19,6 +19,7 @@ class FirstViewController: UIViewController {
 
     webView.load(URLRequest(url: URL(string: "https://appr.tc/r/978949844")!))
     webView.allowsBackForwardNavigationGestures = true
+
   }
 
   override func didReceiveMemoryWarning() {
