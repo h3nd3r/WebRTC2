@@ -18,21 +18,48 @@ class SecondViewController: UIViewController, SFSafariViewControllerDelegate {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
 
-    safari = SFSafariViewController(url: URL(string: "https://appr.tc/r/978949844")!)
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+    safari = SFSafariViewController(url: URL(string: appDelegate.urlString)!)
+
+
+    let configuration: SFSafariViewController.Configuration = SFSafariViewController.Configuration()
+    configuration.barCollapsingEnabled = false
+    configuration.entersReaderIfAvailable = true
+    safari = SFSafariViewController(url: URL(string: appDelegate.urlString)!, configuration: configuration)
+
     safari?.delegate = self
     safari?.modalPresentationStyle = .custom
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
-    if let safari = safari {
-      present(safari, animated: false, completion: nil)
+    if safari == nil {
+      let configuration: SFSafariViewController.Configuration = SFSafariViewController.Configuration()
+      configuration.barCollapsingEnabled = false
+      configuration.entersReaderIfAvailable = true
+      safari = SFSafariViewController(url: URL(string: appDelegate.urlString)!, configuration: configuration)
+
     }
+
+    present(safari!, animated: false, completion: nil)
   }
 
   func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool) {
     //dismiss(animated: false, completion: nil)
+    
+    // SFSafariViewController will present an error message in the browser,
+    // but in this case we will dismiss the view controller and present our
+    // own error alert.
+    if didLoadSuccessfully == false {
+      controller.dismiss(animated: true, completion: { [unowned self] () -> Void in
+        let alert = UIAlertController(title: "Could Not Load", message: "The URL could not be loaded.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+      })
+    }
   }
 
   func safariViewControllerDidFinish(_ controller: SFSafariViewController) {

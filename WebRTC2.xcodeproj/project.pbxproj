@@ -13,26 +13,8 @@
 		1A3E5ADB1FCC9B1400C17740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E5AD91FCC9B1400C17740 /* Main.storyboard */; };
 		1A3E5ADD1FCC9B1400C17740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E5ADC1FCC9B1400C17740 /* Assets.xcassets */; };
 		1A3E5AE01FCC9B1400C17740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E5ADE1FCC9B1400C17740 /* LaunchScreen.storyboard */; };
-		1A3E5AEB1FCC9B1500C17740 /* WebRTC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E5AEA1FCC9B1500C17740 /* WebRTC2Tests.swift */; };
-		1A3E5AF61FCC9B1500C17740 /* WebRTC2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E5AF51FCC9B1500C17740 /* WebRTC2UITests.swift */; };
+		1A8122A01FCF3D00002B416B /* URL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A81229F1FCF3D00002B416B /* URL.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1A3E5AE71FCC9B1500C17740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3E5AC81FCC9B1400C17740 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3E5ACF1FCC9B1400C17740;
-			remoteInfo = WebRTC2;
-		};
-		1A3E5AF21FCC9B1500C17740 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A3E5AC81FCC9B1400C17740 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A3E5ACF1FCC9B1400C17740;
-			remoteInfo = WebRTC2;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A3E5AD01FCC9B1400C17740 /* WebRTC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,30 +25,11 @@
 		1A3E5ADC1FCC9B1400C17740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3E5ADF1FCC9B1400C17740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3E5AE11FCC9B1400C17740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3E5AE61FCC9B1500C17740 /* WebRTC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTC2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3E5AEA1FCC9B1500C17740 /* WebRTC2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTC2Tests.swift; sourceTree = "<group>"; };
-		1A3E5AEC1FCC9B1500C17740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A3E5AF11FCC9B1500C17740 /* WebRTC2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTC2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3E5AF51FCC9B1500C17740 /* WebRTC2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTC2UITests.swift; sourceTree = "<group>"; };
-		1A3E5AF71FCC9B1500C17740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A81229F1FCF3D00002B416B /* URL.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A3E5ACD1FCC9B1400C17740 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3E5AE31FCC9B1500C17740 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3E5AEE1FCC9B1500C17740 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				1A3E5AD21FCC9B1400C17740 /* WebRTC2 */,
-				1A3E5AE91FCC9B1500C17740 /* WebRTC2Tests */,
-				1A3E5AF41FCC9B1500C17740 /* WebRTC2UITests */,
 				1A3E5AD11FCC9B1400C17740 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				1A3E5AD01FCC9B1400C17740 /* WebRTC2.app */,
-				1A3E5AE61FCC9B1500C17740 /* WebRTC2Tests.xctest */,
-				1A3E5AF11FCC9B1500C17740 /* WebRTC2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,26 +65,9 @@
 				1A3E5ADC1FCC9B1400C17740 /* Assets.xcassets */,
 				1A3E5ADE1FCC9B1400C17740 /* LaunchScreen.storyboard */,
 				1A3E5AE11FCC9B1400C17740 /* Info.plist */,
+				1A81229F1FCF3D00002B416B /* URL.xib */,
 			);
 			path = WebRTC2;
-			sourceTree = "<group>";
-		};
-		1A3E5AE91FCC9B1500C17740 /* WebRTC2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1A3E5AEA1FCC9B1500C17740 /* WebRTC2Tests.swift */,
-				1A3E5AEC1FCC9B1500C17740 /* Info.plist */,
-			);
-			path = WebRTC2Tests;
-			sourceTree = "<group>";
-		};
-		1A3E5AF41FCC9B1500C17740 /* WebRTC2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				1A3E5AF51FCC9B1500C17740 /* WebRTC2UITests.swift */,
-				1A3E5AF71FCC9B1500C17740 /* Info.plist */,
-			);
-			path = WebRTC2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,42 +90,6 @@
 			productReference = 1A3E5AD01FCC9B1400C17740 /* WebRTC2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A3E5AE51FCC9B1500C17740 /* WebRTC2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3E5AFD1FCC9B1500C17740 /* Build configuration list for PBXNativeTarget "WebRTC2Tests" */;
-			buildPhases = (
-				1A3E5AE21FCC9B1500C17740 /* Sources */,
-				1A3E5AE31FCC9B1500C17740 /* Frameworks */,
-				1A3E5AE41FCC9B1500C17740 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A3E5AE81FCC9B1500C17740 /* PBXTargetDependency */,
-			);
-			name = WebRTC2Tests;
-			productName = WebRTC2Tests;
-			productReference = 1A3E5AE61FCC9B1500C17740 /* WebRTC2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1A3E5AF01FCC9B1500C17740 /* WebRTC2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A3E5B001FCC9B1500C17740 /* Build configuration list for PBXNativeTarget "WebRTC2UITests" */;
-			buildPhases = (
-				1A3E5AED1FCC9B1500C17740 /* Sources */,
-				1A3E5AEE1FCC9B1500C17740 /* Frameworks */,
-				1A3E5AEF1FCC9B1500C17740 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A3E5AF31FCC9B1500C17740 /* PBXTargetDependency */,
-			);
-			name = WebRTC2UITests;
-			productName = WebRTC2UITests;
-			productReference = 1A3E5AF11FCC9B1500C17740 /* WebRTC2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,16 +103,6 @@
 					1A3E5ACF1FCC9B1400C17740 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-					};
-					1A3E5AE51FCC9B1500C17740 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1A3E5ACF1FCC9B1400C17740;
-					};
-					1A3E5AF01FCC9B1500C17740 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1A3E5ACF1FCC9B1400C17740;
 					};
 				};
 			};
@@ -224,8 +120,6 @@
 			projectRoot = "";
 			targets = (
 				1A3E5ACF1FCC9B1400C17740 /* WebRTC2 */,
-				1A3E5AE51FCC9B1500C17740 /* WebRTC2Tests */,
-				1A3E5AF01FCC9B1500C17740 /* WebRTC2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,20 +132,7 @@
 				1A3E5AE01FCC9B1400C17740 /* LaunchScreen.storyboard in Resources */,
 				1A3E5ADD1FCC9B1400C17740 /* Assets.xcassets in Resources */,
 				1A3E5ADB1FCC9B1400C17740 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3E5AE41FCC9B1500C17740 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3E5AEF1FCC9B1500C17740 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1A8122A01FCF3D00002B416B /* URL.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,36 +149,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A3E5AE21FCC9B1500C17740 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3E5AEB1FCC9B1500C17740 /* WebRTC2Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A3E5AED1FCC9B1500C17740 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A3E5AF61FCC9B1500C17740 /* WebRTC2UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1A3E5AE81FCC9B1500C17740 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3E5ACF1FCC9B1400C17740 /* WebRTC2 */;
-			targetProxy = 1A3E5AE71FCC9B1500C17740 /* PBXContainerItemProxy */;
-		};
-		1A3E5AF31FCC9B1500C17740 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A3E5ACF1FCC9B1400C17740 /* WebRTC2 */;
-			targetProxy = 1A3E5AF21FCC9B1500C17740 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A3E5AD91FCC9B1400C17740 /* Main.storyboard */ = {
@@ -456,68 +308,6 @@
 			};
 			name = Release;
 		};
-		1A3E5AFE1FCC9B1500C17740 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebRTC2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.WebRTC2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTC2.app/WebRTC2";
-			};
-			name = Debug;
-		};
-		1A3E5AFF1FCC9B1500C17740 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebRTC2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.WebRTC2Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTC2.app/WebRTC2";
-			};
-			name = Release;
-		};
-		1A3E5B011FCC9B1500C17740 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebRTC2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.WebRTC2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WebRTC2;
-			};
-			name = Debug;
-		};
-		1A3E5B021FCC9B1500C17740 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WebRTC2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.WebRTC2UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WebRTC2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,24 +325,6 @@
 			buildConfigurations = (
 				1A3E5AFB1FCC9B1500C17740 /* Debug */,
 				1A3E5AFC1FCC9B1500C17740 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3E5AFD1FCC9B1500C17740 /* Build configuration list for PBXNativeTarget "WebRTC2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3E5AFE1FCC9B1500C17740 /* Debug */,
-				1A3E5AFF1FCC9B1500C17740 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A3E5B001FCC9B1500C17740 /* Build configuration list for PBXNativeTarget "WebRTC2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A3E5B011FCC9B1500C17740 /* Debug */,
-				1A3E5B021FCC9B1500C17740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
